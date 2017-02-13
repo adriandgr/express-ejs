@@ -7,25 +7,27 @@ const app = require('express')()
 const posts = [
   {
     id: 1,
-    author: 'John',
+    author: 'Adrian',
     title: 'Templating with EJS',
-    body: 'Blog post number 1'
+    body: 'Ipsum lorem something else...',
+    imgPath: 'https://c.tadst.com/gfx/750x500/lighthouse-day.jpg',
+    imgAlt: 'hey it\'s a lighthouse!'
   },
   {
     id: 2,
-    author: 'Drake',
+    author: 'Jarjar',
     title: 'Express: Starting from the Bottom',
     body: 'Blog post number 2'
   },
   {
     id: 3,
-    author: 'Emma',
+    author: 'Josh',
     title: 'Streams',
     body: 'Blog post number 3'
   },
   {
     id: 4,
-    author: 'Cody',
+    author: 'Katey',
     title: 'Events',
     body: 'Blog post number 4'
   }
@@ -51,7 +53,9 @@ app.get('/post/:id', (req, res) => {
   res.render('post', {
     author: post.author,
     title: post.title,
-    body: post.body
+    body: post.body,
+    imgPath: post.imgPath,
+    imgAlt: post.imgAlt
   })
 })
 

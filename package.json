@@ -1,0 +1,24 @@
+{
+  "name": "express-ejs",
+  "version": "1.0.0",
+  "description": "You've learned how to use Node's http module to create a simple client that retrieves information from an existing server. This exercise finds you on the other end of http, where you will create a web server that sends back http responses. More specifically, you will create a web server that sends back HTML.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriandgr/express-ejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriandgr/express-ejs/issues"
+  },
+  "homepage": "https://github.com/adriandgr/express-ejs#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.1"
+  }
+}
